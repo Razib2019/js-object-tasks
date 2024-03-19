@@ -16,3 +16,17 @@ key: age | type:  number
 key: city | type:  string
 key: isStudent | type:  boolean
  */
+
+let myObject = {
+  name: "John Doe",
+  age: 25,
+  city: "Example City",
+  isStudent: true,
+};
+
+for (prop in myObject) {
+  const propKeys = prop;
+  const propValues = myObject[prop];
+  const propValueTypes = typeof propValues;
+  console.log(propKeys, ":", propValues, " | ", "Type: ", propValueTypes);
+}
